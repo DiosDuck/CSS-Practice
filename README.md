@@ -7,5 +7,5 @@
 - [Nexter](https://diosduck.github.io/CSS-Practice/Nexter/)
 - [Trillo](https://diosduck.github.io/CSS-Practice/Trillo/)
 
-### [Portofolio Website Exercise](https://roadmap.sh/projects/portfolio-website)
-- [Portofolio](https://diosduck.github.io/CSS-Practice/Portofolio/)
+### [Portfolio Website Exercise](https://roadmap.sh/projects/portfolio-website)
+- [Portfolio](https://diosduck.github.io/CSS-Practice/Portfolio/)
