@@ -5,8 +5,8 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="keywords" content="Portfolio, PHP, Angular">
-        <meta name="author" content="Tapuc Mihai Ovidiu">
-        <meta name="description" content="Mihai's portfolio with">
+        <meta name="author" content="Tapuc Mihai-Ovidiu">
+        <meta name="description" content="Mihai's portfolio">
 
         <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="css/style.css">
@@ -15,13 +15,13 @@
         <header class="header">
             <div class="user">
                 <img src="img/bread.png" alt="Bread Icon" class="user__icon">
-                <p class="user__name">&#354&#259puc Mihai Ovidiu</p>
+                <p class="user__name">&#354&#259puc Mihai-Ovidiu</p>
             </div>
             <nav class="nav">
                 <a href="#" class="nav__link">Home</a>
                 <a href="#" class="nav__link">About me</a>
                 <a href="#" class="nav__link">Timeline</a>
-                <a href="#" class="nav__link">Personal projects</a>
+                <a href="#" class="nav__link">Skills</a>
                 <a href="#" class="nav__link">Contact</a>
             </ul>
         </header>
@@ -34,34 +34,63 @@
             </h2>
         </section>
         <section class="about-me">
-            <h3 class="heading-3 about-me__title">About me</h3>
-            <p class="about-me__text">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam iure soluta at, nostrum reiciendis laudantium, commodi dicta, facere quam deleniti tenetur non perferendis perspiciatis possimus veritatis nam ab et distinctio.
-            </p>
-            <svg class="about-me__img">
-                <use xlink:href="img/sprite.svg#icon-graduation-cap"/>
-            </svg>
-            <p class="about-me__text">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam quisquam cum quam expedita blanditiis architecto impedit perferendis doloremque incidunt sint neque suscipit vel, veniam voluptate eos voluptatibus provident eaque eligendi!
-            </p>
-            <svg class="about-me__img">
-                <use xlink:href="img/sprite.svg#icon-lab-flask"/>
-            </svg>
-            <p class="about-me__text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa fuga eum reprehenderit id placeat eos ab unde corporis deserunt, tempore odio eaque rerum! Et, quam reprehenderit voluptas iusto maiores nobis!
-            </p>
-            <svg class="about-me__img">
-                <use xlink:href="img/sprite.svg#icon-game-controller"/>
-            </svg>
-            <p class="about-me__text">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ex voluptatibus nihil omnis vitae iste sint officiis consequatur corporis ipsam! In soluta tempora, quaerat deleniti debitis optio obcaecati? Vel, molestiae!
-            </p>
-            <svg class="about-me__img">
-                <use xlink:href="img/sprite.svg#icon-trophy"/>
-            </svg>
+            <h3 class="heading-3">About me</h3>
+            <div class="about-me__grid">
+                <p class="about-me__text">Hello, my name is &#354;&#259;puc Mihai-Ovidiu, I usually respond to both names. I was born on 28th September 1999 in Piatra-Neam&#355; and now I live in Cluj-Napoca. I studied Computer Science and graduated UBB in Mathematics and Computer Science.</p>
+                <svg class="about-me__img">
+                    <use xlink:href="img/sprite.svg#icon-graduation-cap"/>
+                </svg>
+                <p class="about-me__text">At school I always had a tehnical mind, being passioned about Math and Physics. Once I started high school, my passion shifted into coding, building an application step by step. After University I started working on as PHP developer and sticked with it because of how easy and flexible it is to integrate into a web application.</p>
+                <svg class="about-me__img">
+                    <use xlink:href="img/sprite.svg#icon-lab-flask"/>
+                </svg>
+                <p class="about-me__text">Other than coding, I like jogging when the weather is nice outside, listening to rock and playing strategy games. Sometimes I like taking a deep look into weird bugs which occure (especially in video games), and try to understand what caused it and how it can be fixed or could have been avoided.</p>
+                <svg class="about-me__img">
+                    <use xlink:href="img/sprite.svg#icon-game-controller"/>
+                </svg>
+                <p class="about-me__text">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ex voluptatibus nihil omnis vitae iste sint officiis consequatur corporis ipsam! In soluta tempora, quaerat deleniti debitis optio obcaecati? Vel, molestiae!
+                </p>
+                <svg class="about-me__img">
+                    <use xlink:href="img/sprite.svg#icon-trophy"/>
+                </svg>
+            </div>
         </section>
         <section class="timeline">
             <h3 class="heading-3">Timeline</h3>
+            <div class="changelogs">
+                <div class="changelogs__date"><span>Oct. 2019</span><span>Jul. 2022</span></div>
+                <div class="changelogs__activity">Faculty of Mathematics and Computer Science</div>
+                <div class="changelogs__date"><span>Jul. 2022</span><span>Oct. 2022</span></div>
+                <div class="changelogs__activity">Software Engineer PHP Internship at Accesa IT</div>
+                <div class="changelogs__date"><span>Oct. 2022</span><span>Apr. 2024</span></div>
+                <div class="changelogs__activity">Junior Software Engineer PHP at Accesa IT</div>
+                <div class="changelogs__date"><span>Apr. 2024</span><span>Present</span></div>
+                <div class="changelogs__activity">Middle Software Engineer PHP at Accesa IT</div>
+            </div>
+        </section>
+        <section class="skills">
+            <h3 class="heading-3">Skills</h3>
+            <div class="skills__grid">
+                <div class="skills__grid--title">Foreign Languages</div>
+                <div class="skills__grid--text"><span>English: B2</span><span>Deutsch: A2</span></div>
+                <div class="skills__grid--title">PHP Experience</div>
+                <div class="skills__grid--text"><span>Worked with plain PHP (Console and Web App)</span><span>Symfony</span><span>Laravel</span><span>Laminas</span></div>
+                <div class="skills__grid--title">SQL Databases</div>
+                <div class="skills__grid--text"><span>MariaDB</span><span>MySQL</span><span>SQLite</span><span>PostgresSQL</span></div>
+                <div class="skills__grid--title">NoSQL Databases</div>
+                <div class="skills__grid--text"><span>CouchDB</span><span>ElasticSearch</span></div>
+                <div class="skills__grid--title">Backend knowledge</div>
+                <div class="skills__grid--text"><span>OOP</span><span>Design Patterns</span><span>SOLID</span><span>MVC</span></div>
+                <div class="skills__grid--title">Worked in the past with</div>
+                <div class="skills__grid--text"><span>Docker</span><span>Redis</span><span>RabbitMQ</span></div>
+                <div class="skills__grid--title">Other BE programming languages</div>
+                <div class="skills__grid--text"><span>Python</span><span>Java</span><span>.NET</span></div>
+                <div class="skills__grid--title">FE programming languages</div>
+                <div class="skills__grid--text"><span>HTML</span><span>CSS</span><span>SASS</span><span>JS</span><span>TS</span><span>JQuery</span></div>
+                <div class="skills__grid--title">Soft skills</div>
+                <div class="skills__grid--text"><span>Proactivity</span><span>Polite</span><span>Team player</span><span>Never stopping at the first solution</span><span>Quality code over quantity</span></div>
+            </div>
         </section>
     </body>
 </html>
