@@ -9,13 +9,21 @@
         grid-row: span 1;
     }
 
+    display: flex;
+    flex-direction: column;
+
     &__grid {
         display: grid;
         grid-template-columns: repeat(5, 1fr);
         align-items: center;
-    
+        height: 100%;
+        
         grid-auto-flow: dense;
-        row-gap: 2rem;
+        justify-content: space-evenly;
+
+        @media only screen and (max-width: 1000px) {
+            row-gap: 2rem;
+        }
 
         @media only screen and (max-width: 600px) {
             grid-template-columns: repeat(2, 1fr);
