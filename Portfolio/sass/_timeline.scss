@@ -24,13 +24,13 @@
     &__date,
     &__activity {
         align-content: center;
+        padding: 1.25rem;
     }
 
     &__date {
-        font-size: 1.2rem;
+        font-size: 1.6rem;
         color: #AAA;
         border-right: 2px solid #BBB;
-        padding: .5rem;
 
         & > span {
             white-space: nowrap;
@@ -46,7 +46,6 @@
     &__activity {
         font-size: 1.8rem;
         position: relative;
-        padding: 1.25rem;
 
         &::before {
             content: "";
