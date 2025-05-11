@@ -1,3 +1,13 @@
+$color-primary: #231F20;
+$color-secondary: #BB4430;
+$color-tertiary: #0D00A4;
+$color-background: #EFE6DD;
+
+$bp-smaller: 500px;
+$bp-small: 600px;
+$bp-medium: 800px;
+$bp-big: 1000px;
+
 *,
 *::before,
 *::after {
@@ -9,8 +19,9 @@
 html {
     box-sizing: content-box;
     font-size: 62.5%;
+    color: $color-primary;
 
-    @media only screen and (max-width: 600px) {
+    @media only screen and (max-width: $bp-small) {
         font-size: 50%;
     }
 }
@@ -19,15 +30,20 @@ body {
     font-family: 'Nunito', sans-serif;
     font-weight: 300;
     line-height: 1.6;
-    background-color: #EFEFEF;
+    font-size: 1.6rem;
+    background-color: $color-background;
+    padding-bottom: 2.5rem;
 
     display: grid;
-    grid-template-rows: min-content 30vh;
+    grid-template-rows: min-content calc(30vh - 4rem);
+    row-gap: 2rem;
 
     grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
 
 
-    @media only screen and (max-width: 600px) {
-        grid-template-rows: min-content 20vh;
+    @media only screen and (max-width: $bp-small) {
+        grid-template-rows: min-content calc(20vh - 10rem);
+        row-gap: 5rem;
+        padding-bottom: 5rem;
     }
 }

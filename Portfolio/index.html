@@ -6,9 +6,15 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="keywords" content="Portfolio, PHP, Angular">
         <meta name="author" content="Tapuc Mihai-Ovidiu">
-        <meta name="description" content="Mihai's portfolio">
+        <meta name="description" content="Mihai's Portfolio">
+
+        <meta property="og:title" content="Mihai's Portfolio" />
+        <meta property="og:description" content="See Mihai-Ovidiu Tapuc's Portfolio" />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="https://ahrefs.com/blog/wp-content/uploads/2019/12/fb-how-to-become-an-seo-expert.png" />
 
         <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+        <link rel="icon" type="image/png" href="img/bread.png">
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
@@ -21,7 +27,7 @@
                 <a href="#about-me" class="nav__link">About me</a>
                 <a href="#timeline" class="nav__link">Timeline</a>
                 <a href="#skills" class="nav__link">Skills</a>
-                <a href="#" class="nav__link">Contact</a>
+                <a href="#contact" class="nav__link">Contact</a>
             </ul>
         </header>
         <section class="title">
@@ -43,13 +49,11 @@
                 <svg class="about-me__img">
                     <use xlink:href="img/sprite.svg#icon-lab-flask"/>
                 </svg>
-                <p class="about-me__text">Outside of work, I enjoy jogging (especially when the weather's nice), listening to rock music, and playing strategy games. I also like diving into odd bugs, especially in video games, just to figure out what caused them and how they could be fixed — it's like solving a mystery.</p>
+                <p class="about-me__text">Outside of work, I enjoy skating and jogging (especially when the weather's nice), listening to rock music, and playing strategy games. I also like diving into odd bugs, especially in video games, just to figure out what caused them and how they could be fixed — it's like solving a mystery.</p>
                 <svg class="about-me__img">
                     <use xlink:href="img/sprite.svg#icon-game-controller"/>
                 </svg>
-                <p class="about-me__text">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ex voluptatibus nihil omnis vitae iste sint officiis consequatur corporis ipsam! In soluta tempora, quaerat deleniti debitis optio obcaecati? Vel, molestiae!
-                </p>
+                <p class="about-me__text">My goals as a programmer are to constantly explore new things and share my knowledge with others. No matter how much you think you know about a domain or language, there's always something new to learn—something that can be applied to your day-to-day projects and activities.</p>
                 <svg class="about-me__img">
                     <use xlink:href="img/sprite.svg#icon-trophy"/>
                 </svg>
@@ -74,7 +78,7 @@
                 <div class="skills__grid--title">Foreign Languages</div>
                 <div class="skills__grid--text"><span>English: B2</span><span>Deutsch: A2</span></div>
                 <div class="skills__grid--title">PHP Experience</div>
-                <div class="skills__grid--text"><span>Worked with plain PHP (Console and Web App)</span><span>Symfony</span><span>Laravel</span><span>Laminas</span></div>
+                <div class="skills__grid--text"><span>Worked with plain PHP (Console and Web App)</span><span>Symfony</span><span>Laminas</span><span>Laravel</span></div>
                 <div class="skills__grid--title">SQL Databases</div>
                 <div class="skills__grid--text"><span>MariaDB</span><span>MySQL</span><span>SQLite</span><span>PostgresSQL</span></div>
                 <div class="skills__grid--title">NoSQL Databases</div>
@@ -86,10 +90,20 @@
                 <div class="skills__grid--title">Other BE programming languages</div>
                 <div class="skills__grid--text"><span>Python</span><span>Java</span><span>.NET</span></div>
                 <div class="skills__grid--title">FE programming languages</div>
-                <div class="skills__grid--text"><span>HTML</span><span>CSS</span><span>SASS</span><span>JS</span><span>TS</span><span>JQuery</span></div>
+                <div class="skills__grid--text"><span>HTML</span><span>CSS and SASS</span><span>JS and TS</span><span>JQuery</span></div>
                 <div class="skills__grid--title">Soft skills</div>
                 <div class="skills__grid--text"><span>Proactivity</span><span>Polite</span><span>Team player</span><span>Never stopping at the first solution</span><span>Quality code over quantity</span></div>
+                <div class="skills__grid--title">Personal projects</div>
+                <div class="skills__grid--text">
+                    <span><a target="_blank" href="https://github.com/DiosDuck/PasswordSaverPHP" class="inline-link">Simple Password Saver, done in plain PHP with OpenSSL</a></span>
+                    <span><a target="_blank" href="https://github.com/DiosDuck/RodaFramework" class="inline-link">Personal Basic Framework, done in plain PHP</a></span>
+                    <span><a target="_blank" href="https://github.com/DiosDuck/CSS-Practice" class="inline-link">SASS Projects, done on the study period</a></span>
+                </div>
             </div>
+        </section>
+        <section class="contact" id="contact">
+            <h3 class="heading-3">Contact</h3>
+            <p>Feel free to reach out to me on <a target="_blank" href="https://www.linkedin.com/in/mihai-ovidiu-tapuc-167940208/" class="inline-link">LinkedIn</a>—I'm happy to share more details there. I'd love to grab a coffee and chat, whether it's about tech, projects, or anything else you're passionate about!</p>
         </section>
     </body>
 </html>

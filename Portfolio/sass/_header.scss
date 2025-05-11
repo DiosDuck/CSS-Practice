@@ -4,9 +4,9 @@
     font-size: 1.75rem;
     grid-column: full-start / full-end;
 
-    border-bottom: 1px solid #BBB;
+    border-bottom: 1px solid $color-secondary;
 
-    @media only screen and (max-width: 800px) {
+    @media only screen and (max-width: $bp-medium) {
         flex-flow: column;
     }
 }
@@ -17,8 +17,9 @@
     padding: 1rem;
 
 
-    @media only screen and (max-width: 800px) {
+    @media only screen and (max-width: $bp-medium) {
         justify-content: center;
+        color: $color-secondary;
     }
 
     &__icon {
@@ -35,7 +36,7 @@
 .nav {
     display: flex;
 
-    @media only screen and (max-width: 800px) {
+    @media only screen and (max-width: $bp-medium) {
         justify-content: center;
     }
 
@@ -45,13 +46,14 @@
         padding: 0 1.5rem;
         display: flex;
         align-items: center;
-        color: #000;
+        color: $color-primary;
+        transition: all .2s;
         cursor: pointer;
 
         &:not(:last-child)::after {
             content: '/';
             transform: translateX(1.75rem);
-            color: #BBB;
+            color: $color-secondary;
             font-size: 2.5rem;
             font-weight: 200;
         }
@@ -59,6 +61,7 @@
 
     &__link:hover,
     &__link:focus {
-        color: #BBB;
+        color: $color-secondary;
+        font-size: 2rem;
     }
 }

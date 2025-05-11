@@ -8,9 +8,8 @@
 
     margin-bottom: 2rem;
 
-    @media only screen and (max-width: 1000px) {
+    @media only screen and (max-width: $bp-big) {
         grid-column: center-start / center-end;
-        margin-top: 5rem;
         margin-bottom: 0;
     }
 }
@@ -28,9 +27,8 @@
     }
 
     &__date {
-        font-size: 1.6rem;
-        color: #AAA;
-        border-right: 2px solid #BBB;
+        color: $color-secondary;
+        border-right: 2px solid $color-secondary;
 
         & > span {
             white-space: nowrap;
@@ -52,8 +50,8 @@
             width: 1.25rem;
             height: 1.25rem;
             border-radius: 100%;
-            background-color: #EFEFEF;
-            border: 3px solid #BBB;
+            background-color: $color-background;
+            border: 3px solid $color-secondary;
             display: block;
             position: absolute;
             top: calc(50% - .625rem);

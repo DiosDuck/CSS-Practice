@@ -4,7 +4,7 @@
     grid-column: center-start / col-end 4;
     grid-row: span 2;
 
-    @media only screen and (max-width: 1000px) {
+    @media only screen and (max-width: $bp-big) {
         grid-column: center-start / center-end;
         grid-row: span 1;
     }
@@ -22,11 +22,11 @@
         justify-content: space-evenly;
         row-gap: 2rem;
 
-        @media only screen and (max-width: 600px) {
+        @media only screen and (max-width: $bp-big) {
             grid-template-columns: repeat(2, 1fr);
         }
     
-        @media only screen and (max-width: 600px) {
+        @media only screen and (max-width: $bp-smaller) {
             grid-template-rows: min-content;
             grid-template-columns: 1fr;   
         }
@@ -35,7 +35,7 @@
     &__img {
         height: 10rem;
         width: 10rem;
-        fill: #BBB;
+        fill: $color-secondary;
         justify-self: center;
 
         &:nth-child(4n) {
@@ -46,7 +46,7 @@
             grid-column: 4 / 6;
         }
 
-        @media only screen and (max-width: 600px) {
+        @media only screen and (max-width: $bp-big) {
             &:nth-child(4n) {
                 grid-column: 1 / 2;
             }
@@ -56,7 +56,7 @@
             }
         }
 
-        @media only screen and (max-width: 600px) {
+        @media only screen and (max-width: $bp-smaller) {
             &:nth-child(4n),
             &:nth-child(4n + 2) {
                 grid-column: 1 / 2;
@@ -65,7 +65,6 @@
     }
 
     &__text {
-        font-size: 1.6rem;
 
         &:nth-child(4n + 1) {
             grid-column: 1 / 4;
@@ -75,7 +74,7 @@
             grid-column: 3 / 6;
         }
 
-        @media only screen and (max-width: 600px) {
+        @media only screen and (max-width: $bp-big) {
             &:nth-child(4n + 1) {
                 grid-column: 1 / 2;
             }
@@ -85,7 +84,7 @@
             }
         }
 
-        @media only screen and (max-width: 600px) {
+        @media only screen and (max-width: $bp-smaller) {
             &:nth-child(4n + 1),
             &:nth-child(4n + 3) {
                 grid-column: 1 / 2;
